@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 800px;
+            margin: 0 auto; 
+        }
+    </style>
+</head>
+<body>
+    <p>Select your language:</p>
+
+    <button onclick="window.location.href='index.html'">Svenska</button>
+    <button onclick="window.location.href='index-en.html'">English</button>
+
+</body>
+<body>
+<h1>Panzerkampfwagen VIII Maus</h1><br>
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Arial, sans-serif;}
+    
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .slides {
+        display: none;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* iconer för nästa-före */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* position av nästa-före */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* Punkter */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+</style>
+</head>
+<body>
+
+<h2>Historisk bilder av Maus</h2>
+<hr>
+
+<div class="slideshow-container">
+<!-- Slides -->
+<div class="slides fade">
+    <img src="https://warfarehistorynetwork.com/wp-content/uploads/2018/12/W-Maus-29-2000x1393.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://i0.wp.com/cms.sofrep.com/wp-content/uploads/2021/06/cmls2kemrv841.jpg?fit=460%2C319&ssl=1&w=800" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY-4_mjrtEpwQrasoAVZQ_yk_7tc7QPI0fxNQfm24ugwAPCoAPGsrAW_q2n7wJzgscuXm6L_eBBIjtEmvIQe9JvxpeTBLuK2VHSCC_A7RTqCu8sVnIlPUsr2AJkCX6A6j2C2Xicxow1xfV/s1600/pzkpfwmausdev21-0109c8b606dc89733ba3a77679337372.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://www.lonesentry.com/articles/maus/fig0_german_superheavy_tank_mouse_maus_sideview.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/12/B6iW_evCIAAynFt-e1607808034323.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/12/1944-maus-copyright-unknown.jpg" style="width:100%">
+
+</div>
+
+<div class="slides fade">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9pTX-NSqJdo2wn1YImtPmMyYy6b3HZPTz4WCsZVuWFIpVDff5Q0rpeeqKo2hMMhcivSQrgkWu3BKvb0Cw0blRODUuUD7DrPKlnR8-EAA87uup6XuxKK9nW-jUk9dTlD0qU7kpt-xcDOfz/s1600/pzkpfwmausdev18-112de13ef8293823b07b15c6105fa056.jpg" style="width:100%">
+</div>
+
+<!-- nästa-före iconer -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- Punkter under slide bilder -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// kontroll för slide
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// bilden som är present
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("slides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h2>A.k.a Mighty Maus</h2>
+<hr>
+
+<p title="Maus">Panzerkampfwagen VIII Maus</p>
+<pre> Panzerkampfwagen VIII Maus (Stridsvagn 8 Mus), förkortat Pz.Kpfw.
+ VIII, Panzer VIII eller Pz.VIII, var en nazitysk övertung strids-
+ vagn konstruerad under andra världskriget av bilkonstruktören 
+ Ferdinand Porsche på direkt order från Adolf Hitler. Pz.VIII Maus 
+ räknas som den hittills tyngsta stridsvagnen som någonsin har byggts
+ i historien och tillverkades endast i två prototyper
+ (dock tillverkades det flera tomma skrov och torn).</pre>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/%D7%9E%D7%90%D7%95%D7%A1.png" height="350" width="600" alt="Detta bilden visar Maus"><br>
+<h2>Historik av Panzervagnen</h2>
+<hr>
+<pre>
+        Historien om Maus började med att Nazityskland började arbeta på övertunga stridsvagnar under tidigt 1940-tal.
+    Flera projekt med vikter från 70 till 200 ton föreslogs. Ett av dessa kom att bli Panzerkampfwagen VII Löwe (lejon).
+    Dock ville Hitler ha en mycket kraftfullare stridsvagn vilket gjordes att Panzer VII Löwe-projektet skrotades och
+    istället valde man att arbeta på en tyngre vagn som fick beteckningen Panzerkampfwagen VIII Maus (Mus). Namnet Maus
+    började troligen som ett skämt på grund av vagnens storlek men verkar ha blivit officiellt under projektets gång.
+
+       Den nya vagnen skulle vara osårbar mot alla typer av pansarvärnskanoner för sin tid vilket gjorde den mycket tung. 
+    Stridsvagnen var så tung att den inte kunde användas speciellt praktiskt. Till exempel kunde ingen bro i Tyskland 
+    bära vagnen vilket gjorde att man behövde köra vagnen under vattnet med snorkel vilket heller inte fungerade speciellt
+    bra då tyngden lätt kunde få vagnen att fastna i dyn. Andra problem med vikten var att vagnen blev extremt långsam och
+    drog mycket bränsle. Den stora vikten gav höga belastningar med återkommande mekaniska haverier hos olika komponenter.
+    
+       Två prototyper byggdes. Första prototypen, kallad V1, hade enbart ett vikttorn medan den andra prototypen, kallad V2,
+    hade beväpning. Prototyperna testades vid övningsområdet Heeresversuchsanstalt Kummersdorf. Innan prototyperna hade 
+    testats färdigt hade Hitler beställt 150 stycken Maus-vagnar. Dessa skulle byggas av Krupp då de var de enda som kunde 
+    producera vagnen. När problemen med vagnen blev uppenbara beordrade Hitler att projektet därför skulle skrotas. Krupp 
+    hade redan vid detta tillfälle börjat producera flera torn och chassin som då behövde skrotas. Dock fick Ferdinand-Porsche 
+    fortsätta tester med prototyperna ifall man kunde komma på ett sätt att rädda projektet. Dock sattes sista spiken i kistan 
+    då Krupps fabrik blev bombad vilket gjorde det omöjligt att producera vagnen. När Sovjetunionen intog övningsområdet 
+    Kummersdorf lyckades tyskarna förstöra prototyperna så att ryssarna inte skulle kunna göra tester på dem.
+    
+       När de förstörda prototyperna väl var i ryska händer monterade man tornet från prototyp V2 på chassit av prototyp V1 för 
+    att få en så komplett vagn som möjligt (detta då V1-chassit var mer komplett än V2-chassit). Efter skjuttester mot vagnen 
+    blev den ett museiföremål och den externt restaurerade vagnen finns nu bevarad vid Kubinka stridsvagnsmuseum nära Moskva 
+    i Ryssland.</pre>
+    <hr>
+
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Metro-maus1.jpg/800px-Metro-maus1.jpg" style="width:100%"><br>
+<a href="https://sv.wikipedia.org/wiki/Panzerkampfwagen_VIII_Maus">Resource</a>
+
+
+</body>
+</html>
