@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Panzerkampfwagen Tiger Ausf. B</title>
+    <link rel="icon" 
+    href="https://www.freeiconspng.com/uploads/tank-icon-30.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 800px;
+            margin: 0 auto; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Select your language:</p>
+
+    <button onclick="window.location.href='TigerII.html'">Svenska</button>
+    <button onclick="window.location.href='TigerII-en.html'">English</button>
+
+</body>
+<body>
+<h1><mark>Panzerkampfwagen Tiger Ausf. B (Tiger II)</mark></h1>
+<br>
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Arial, sans-serif;}
+    
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .slides {
+        display: none;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* iconer för nästa-före */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* position av nästa-före */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* Punkter */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+</style>
+</head>
+<body>
+
+<h2>Historical pictures of Tiger II</h2>
+<hr>
+
+<div class="slideshow-container">
+<!-- Slides -->
+<div class="slides fade">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Bundesarchiv_Bild_101I-680-8282A-16A%2C_Budapest%2C_Panzer_VI_%28K%C3%B6nigstiger%29.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/German_tank_Pz.Kpfw._VI_Ausf._B_%22Tiger_II%22_%28223%29_of_the_503rd_heavy_tank_battalion_on_the_streets_of_Budapest_October_1944._%2850023567543%29.jpg/1280px-German_tank_Pz.Kpfw._VI_Ausf._B_%22Tiger_II%22_%28223%29_of_the_503rd_heavy_tank_battalion_on_the_streets_of_Budapest_October_1944._%2850023567543%29.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Bundesarchiv_Bild_101I-680-8282A-06%2C_Budapest%2C_Panzer_VI_%28Tiger_II%2C_K%C3%B6nigstiger%29.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Bundesarchiv_Bild_101I-721-0398-21A%2C_Frankreich%2C_Panzer_VI_%28Tiger_II%2C_K%C3%B6nigstiger%29.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://normandy-victory-museum.fr/wp-content/uploads/2024/06/Tigre-II-camouflage.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://i.ytimg.com/vi/uKChFgQT9z4/maxresdefault.jpg" style="width:100%">
+
+</div>
+
+<!-- nästa-före iconer -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- Punkter under slide bilder -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// kontroll för slide
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// bilden som är present
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("slides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h2>A.k.a <mark>Tiger II</mark></h2>
+<hr>
+
+<p title="Maus"><b>Panzerkampfwagen Tiger Ausf. B</b></p>
+<pre><em> The Tiger II was a German heavy tank of the Second World War. The final official German designation was 
+Panzerkampfwagen Tiger Ausf. B, often shortened to Tiger B. The ordnance inventory designation was Sd.Kfz. 182.
+(Sd.Kfz. 267 and 268 for command vehicles). It was also known informally as the Königstiger (German for Bengal tiger, lit. 'King Tiger').
+Contemporaneous Allied soldiers often called it the King Tiger or Royal Tiger. The Tiger II was the successor to the Tiger I, 
+combining the latter's thick armour with the armour sloping used on the Panther medium tank. It was the costliest German tank 
+to produce at the time. The tank weighed almost 70 tonnes, and was protected by 100 to 185 mm (3.9 to 7.3 in) of armour to the front.
+It was armed with the long barrelled (71 calibres) 8.8 cm KwK 43 anti-tank cannon. The chassis was also the basis for the Jagdtiger
+turretless Jagdpanzer anti-tank vehicle. The Tiger II was issued to heavy tank battalions of the Army and the Waffen-SS. It was 
+first used in combat by 503rd Heavy Panzer Battalion during the Allied invasion of Normandy on 11 July 1944;[14] on the Eastern Front,
+ the first unit to be outfitted with the Tiger II was the 501st Heavy Panzer Battalion. Due to heavy Allied bombing, only 492 were produced.</em></pre>
+ 
+<img src="https://id3486.securedata.net/fprado/armorsite/Tiger-2-2002-Picz/KTiger-506-Captured-Big2.jpg" height="180" width="300" alt="Detta bilden visar Maus">
+<body>
+    <iframe src="tabletanks.html" width="490" height="215" title="Present Tanks"></iframe>
+</body>
+<br>
+<h2>History of the Tiger 2</h2>
+<hr>
+<pre><i>
+    Development started in 1937 with a design contract awarded to Henschel. Another design contract followed in 1939, given to Porsche. Both 
+prototypes used the same turret design from Krupp. The main differences were in the hull, transmission, suspension and automotive features.The 
+Henschel version used a conventional hull design with sloped armour resembling the layout of the Panther tank. It had a rear-mounted engine and
+used nine steel-tired, eighty-centimetre-diameter overlapping road wheels per side with internal springing, mounted on transverse torsion bars, 
+in a similar manner to the original Henschel-designed Tiger I. To simplify maintenance, however, the wheels were only overlapping without being 
+interleaved—the full Schachtellaufwerk rubber-rimmed road-wheel system that had been in use on nearly all German half-tracks used the interleaved 
+design, later inherited by the Tiger I and Panther.The Porsche hull designs included a rear-mounted turret and a mid-mounted engine. The suspension
+was the same as on the Elefant tank destroyer. This had six road wheels per side mounted in paired bogies sprung with short longitudinal torsion 
+bars that were integral to the wheel pair; this saved internal space and facilitated repairs. One Porsche version had a gasoline-electric drive 
+(fundamentally identical to a Diesel-electric transmission, only using a gasoline-fueled engine as the prime mover), similar to a gasoline-electric
+hybrid but without a storage battery; two separate drivetrains in parallel, one per side of the tank, each consisting of a hybrid drive train; 
+gasoline engine electric generator electric motor drive sprocket. This method of propulsion had been used on the rejected Tiger (P) design, which
+had been rebuilt as Elefant, and in some US designs and was put into production in the French World War I era Saint-Chamond tank and post-
+World War I Char 2C. The Porsche suspension components were later used on a few of the later Jagdtiger tank destroyers. Another proposal was to 
+use hydraulic drives; Dr. Porsche's unorthodox designs gathered little favour.
+</i></pre>
+<hr>
+
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/SdKfz182.jpg/1280px-SdKfz182.jpg" style="width:100%"><br>
+<a href="https://sv.wikipedia.org/wiki/Panzerkampfwagen_VI_K%C3%B6nigstiger">Resource</a><br>
+<a href="mailto:gnowancoding@gmail.com">Request's and contact</a>
+
+
+</body>
+</html>
