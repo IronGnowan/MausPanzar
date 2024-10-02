@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Panzerkampfwagen VI Tiger</title>
+    <link rel="icon" 
+    href="https://www.freeiconspng.com/uploads/tank-icon-30.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 800px;
+            margin: 0 auto; 
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <a href="TigerI.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwe-D2RlgNYVnelr2ATlZD9TxukyEpP7AaSQ&s" style="width:75px;height:auto;">
+    </a>
+    <a href="TigerII.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVUbT_jmHaMi74kIt-hojOEI8so9ZTC61u9A&s" alt="Tiger II" style="width:75px;height:auto;">
+    </a>
+    <a href="index.html">
+        <img src="https://i.redd.it/0q95w8fuof471.jpg" style="width:75px;height:auto;">
+    </a>
+
+</body>
+<body>
+<h1><mark>Panzerkampfwagen VI Tiger</mark></h1>
+<br>
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Arial, sans-serif;}
+    
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .slides {
+        display: none;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* iconer för nästa-före */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* position av nästa-före */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* Punkter */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+</style>
+</head>
+<body>
+
+<h2>Historisk bilder av Panzerkampfwagen VI Tiger</h2>
+<hr>
+
+<div class="slideshow-container">
+<!-- Slides -->
+<div class="slides fade">
+    <img src="https://images.squarespace-cdn.com/content/v1/560d64bee4b0ac178f35b7a9/1496407701622-UC4GI6VIAO7TORDQT3ZW/Tiger+tank%2C+Russia%2C+1944" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://www.historyhit.com/app/uploads/2021/02/Bundesarchiv_Tiger-1-tank.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/german-armay-armoured-corps-a-heavy-tank-vi-tiger-front-news-photo-549025205-1545336787.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://www.paradata.org.uk/sites/default/files/styles/modal/public/pictures/Bundesarchiv_Bild_183-J14953%2C_Sizilien%2C_Panzer_VI_%28Tiger_I%29.jpg?itok=xIG7eK8x" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://i.redd.it/jjyqvz4hnhw51.jpg" style="width:100%">
+</div>
+
+<div class="slides fade">
+    <img src="https://www.worldwarphotos.info/wp-content/gallery/germany/tanks/tiger-tank/Tiger_I_number_332__321__331__sPzAbt._503.jpg" style="width:100%">
+
+</div>
+
+<div class="slides fade">
+    <img src="https://westerncivww2.pbworks.com/f/1206642500/Tiger-Battalions-1.jpg" style="width:100%">
+</div>
+
+<!-- nästa-före iconer -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- Punkter under slide bilder -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// kontroll för slide
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// bilden som är present
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("slides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h2>A.k.a <mark>Tiger I</mark></h2>
+<hr>
+
+<p title="Maus"><b>Panzerkampfwagen VI Tiger</b></p>
+<pre><em> Panzerkampfwagen VI Tiger, vanligen kallad Tiger I, var en tysk tung stridsvagn som utvecklades 1942 och användes under andra världskriget.
+Den slutgiltiga officiella beteckningen var Panzerkampfwagen VI Tiger Ausf.E. Tiger I gav Wehrmacht sin första stridsvagn utrustad med en 
+88 mm-kanon: 8,8 cm KwK 36 L/56. Under krigets gång användes Tiger I i strid på alla tyska fronter. Vanligtvis ingick den i fristående stridsvagns-
+bataljoner, vilket visade sig vara mycket effektivt. Även om Tiger I var en mycket avancerad design var den samtidigt mycket komplicerad. Strids-
+vagnen använde dyra material och arbetsintensiva produktionsmetoder. Totalt 1 347 stycken byggdes mellan augusti 1942 och augusti 1944 
+(cirka 56 vagnar per månad). Tiger I hade en tendens att drabbas av vissa typer av fel på larvfötterna och hade en begränsad aktionsradie på grund 
+av hög bränsleförbrukning. Den var dyr att underhålla men generellt mekaniskt pålitlig. Stridsvagnen var också svår att transportera, och kunde 
+immobiliseras när lera, is och snö fryste mellan sitt överlappande och ihopvävda Schachtellaufwerk-mönster i hjulen, i både menföre och efterföljan-
+de rysk vinter, vilket ofta kunde göra att hjulen fastnade helt. Produktionen fasades ut under 1944 till fördel för Tiger II (Königstiger). Strids-
+vagnen gavs sitt smeknamn "Tiger" av Ferdinand Porsche, och den romerska siffran lades till efter att den senare Tiger II började produceras. 
+Den första officiella beteckningen var Panzerkampfwagen VI Ausführung H (‘Panzer VI version H’, förkortat PzKpfw VI Ausf. H), med krigsmaterielsbe-
+teckning SdKfz 182, men stridsvagnen döptes om till PzKpfw VI Ausf. E i mars 1943, med krigsmaterielsbeteckning SdKfz 181. Idag finns bara en 
+handfull stridsvagnar kvar i museum och utställningar världen över. The Tank Museums "Tiger 131" är idag den enda Tiger som restaurerats till 
+fungerande skick. Just denna stridsvagn har bland annat medverkat i filmen Fury.
+</em></pre>
+ 
+<img src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/318330413_1444601362697908_8254008820932386841_n.png?stp=dst-png_s600x600&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CiShSzYvP0cQ7kNvgHB9Kke&_nc_ht=scontent-arn2-1.xx&_nc_gid=A1EeB482KUFIJ79GCwLnA-K&oh=00_AYBtZp4de5p8MPCJdQVy_ywnl3-BR03Z2hMDdV3BIB2gBg&oe=6703AB1D" height="220" width="300" alt="Detta bilden visar Tiger I">
+<body>
+    <iframe src="tabletanks.html" width="490" height="215" title="Present Tanks"></iframe>
+</body>
+<br>
+<h2>Panservagnens historik</h2>
+<hr>
+<pre><i>
+    1937 begärde Waffenamt att Henschel skulle utveckla en tung genombrottsstridsvagn som skulle vara 50 % tyngre än PzKpfw IV och skyddas av ett 
+pansar på upp till 50 mm tjockt, de första modellerna av PzKpfw IV hade en maximal tjocklek på sitt pansar på 20 mm som jämförelse. Durchbruchwagen
+I var den första prototypen från detta arbete. Prototypen hade ett bandaggregat med fem bärhjul och drevs av en Maybach HL 120 motor, inget torn 
+monterades på prototypen men beväpningen var tänkt att utgöras av en 7,5 cm KwK 37. 1938 beställdes en förbättrad prototyp Durchbruchwagen II. Den 
+9 september 1938 beställde Waffenamt utvecklingen av en stridsvagn dom uppfyllde specifikationen VK3001 av Henschel. VK3001(H) baserade på 
+prototypen till Durchbruchwagen II, den stora skillnaden var att de överlappande bärhjulen i bandaggregatet infördes. Den första prototypen var 
+färdig i början av 1940 och en förserie beställdes. I maj 1941 bestämde man sig för att överge utvecklingen till förmån för den tyngre VK3601 som 
+hade högre krav på att kunna bekämpa andra stridsvagnar. 1939 fick Ferdinand Porsche ett kontrakt på att utveckla en stridsvagn som uppfyllde 
+specifikationen VK3001. VK3001(P) drevs av två luftkylda motorer och hade en elektrisk kraftöverföring. Utvecklingen av Tiger I startade 1937 och 
+den första vagnen levererades i juli 1942. Henschel och Ferdinand Porsche hade mellan 1937 och 1941 utformat koncept och prototyper av olika 
+medeltunga och tunga stridsvagnar. 26 maj 1941 beordrade Hitler både Porsche och Henschel att lägga fram sina förslag till en tung stridsvagn som 
+skulle vara redo sommaren 1942. Krupp fick ansvaret att producera huvudbeväpning och torn för både Porsches och Henschels förslag. Vapenprogrammet 
+fick benämningen Tigerprogram. Både Henschel och Porsche baserade sin design på tidigare prototyper. Den nya 45 ton tunga stridsvagnen skulle 
+beväpnas med en 88 mm KwK L/56 (KampfwagenKanone, L/56 innebär att eldröret är 56 kalibrar lång = 4,928 m), en kanon baserad på den berömda luft-
+värnskanonen 8,8 cm FlaK 36. Utvecklingen av Porsches förslag gick betydligt fortare än Henschels vagn, då Porsche redan påbörjat ett fristående 
+projekt för en tung stridsvagn 1940. Henschels förslag var mindre avancerat och återanvände komponenter från tidigare projekt. Henschel beslutade 
+även att man vill testa med både 88 mm kanonen och den mindre 7,5 cm KwK 42 L/70 som senare användes på Panthern, men till slut beslutade man sig 
+för att satsa på 88:an. 19 april 1942 färdades de båda prototyperna för egen maskin från en järnvägsstation till provfältet vid Rastenburg, med 
+ett antal stopp för reparationer. Prototyperna presenterades för Hitler dagen efter. I juli genomgick prototyperna omfattande tester vid strids-
+vagnsskolan i Berka, Tyskland. Testerna visade att Porschevagnens bensinelektriska drivlina inte höll måttet, medan Henschels vagn fungerade 
+utmärkt. I juli godkändes Henschels Tiger och produktionen startade hos Henschel und Sohns fabrik i Kassel.
+
+
+<b>Egenskaper</b>
+
+Tiger I var beväpnad med den kraftiga 88 mm-kanonen som från början var en luftvärnskanon, 88 mm FlaK 36 L/56 som utvecklades av Krupp och Bofors 
+i Sverige under mellankrigstiden (utveckling av luftvärn var inte tillåtet i Tyskland efter första världskriget, så tyska utvecklingsteam for 
+utomlands). Kanonen var upphängd något höger om tornets mittlinje och avfyrades elektriskt. Riktning av tornet skedde hydrauliskt med handhjul för 
+fininställning i sidled och elevation. Tornet kunde svänga i 360 grader, såväl medsols som motsols. Tigern hade en MG34 monterad fram i chassit 
+och en MG34 monterad koaxialt med kanonen. Tigern hade plats för 96 granater (patroner), normalt uppdelade på hälften pansarbrytande projektiler 
+och hälften spränggranater mot mjuka mål. Pzgr. 39 kunde slå igenom 100 mm pansar i 30 graders vinkel på ett avstånd av 1 000 meter medan Pzgr. 
+40 med volframkärna lätt slog igenom 170 mm pansar på kort håll och 110 mm på 2 000 meter. Det tjocka pansaret gjorde att Tigern i princip inte 
+kunde förstöras av de flesta allierade stridsvagnar framifrån. Den amerikanska M4 Sherman med sin 75 mm kanon och ryska T-34/76 måste in på väldigt
+nära håll för att kunna penetrera Tigerns pansar, och detta var ingen lätt uppgift då Tigern rapporterats kunna slå ut T-34-stridsvagnar på 3 900 
+meters håll. Britternas tumregel för Tigerbekämpning var att det behövdes tre Shermanstridsvagnar för att slå ut en Tiger, och då skulle enbart en 
+Sherman klara sig.[källa behövs] Strategin från de amerikanska pansarvagnsförbanden gick ut på att man närmade sig en Tiger-stridsvagn med två 
+Sherman-stridsvagnar, snett framifrån från varsitt håll, och att en tredje Sherman stridsvagn sedan smög runt bakom Tiger-stridsvagnen för att slå 
+ut den från motorhållet eller sidan, där pansaret var tunnare (80 mm) än i fronten (100 mm). Tigerns svaghet var motorn som krävde ständigt underhåll.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TigerI_Saumur.jpg/1024px-TigerI_Saumur.jpg" style="width:100%"><br>
+
+De flesta Tigrar förstördes av sin egen besättning efter att banden blivit avskjutna eller motorn gått sönder. Tigrarna var liksom alla andra strids-
+vagnar även sårbar för flygangrepp då pansaret på ovansidan var relativt tunt för att spara vikt. Efter september 1943 var Tigrarna täckta med 
+zimmerit som skydd mot magnetminor (bland de allierade användes dock magnetminor endast av de sovjetiska trupperna). Tigern hade fem mans besättning:
+vagnchef, skytt, laddare, radioman (som även bemannade kulsprutan i chassit) och förare. Vagnchefen och skytten satt till vänster om kanonen medan 
+laddaren satt till höger. Föraren satt fram till vänster med radiomannen till höger om sig. De första 250 Tigrarna hade en 12-cylindrig 21 liters 
+Maybach HL210 P45-bensinmotor på 590 hästkrafter och denna räckte knappast till att driva fram den tunga Tigern i terrängen. En modifierad motor på
+700 hk på 23,88 liter togs fram och började användas från maj 1943. Ljudet av Tigerns motor som startar var mycket distinkt och välkänt för allierade
+soldater. Styrningen sköttes med en ratt som kontrollerade den hydrauliska servon. Bromsspakar fanns att använda för styrning i nödfall eller för 
+att få till en mindre svängradie än den som gavs av hydraul-systemet. Tigern hade åtta växlar framåt och växellådan var hydrauliskt manövrerad. 
+Växellådan hade en förväljare (man valde först vilken växel man ville växla till och sedan trampade man på en pedal så växlade lådan) och var 
+halvautomatisk. Bandaggregaten bestod av ett främre drivhjul med 20 kuggar, ett frisnurrande hjul bak vars fästpunkt kunde flyttas framåt eller 
+bakåt för att spänna bandet, och 16–24 bärhjul vars 8 axlar var monterade på torsionsfjädrade pendelarmar. Med ett bandaggregat på var sida hade 
+vagnen totalt 16 bärhjulsaxlar med 24–32 bärhjul. En intressant detalj är att bärhjulens pendelarmar pekade framåt på vänster sida och bakåt på 
+höger sida. Detta ovanliga arrangemang användes då utrymmesbrist i skrovet på grund av det stora antalet torsionsfjädrar (1 fjäder för var och en 
+av de 16 hjulaxlarna) gjorde det omöjligt att montera pendelarmarna i det traditionella "eftersläpande" utförandet på båda sidor av vagnen. Antalet
+bärhjul per axel varierade mellan två och tre då Tigern hade två olika bandstorlekar, transportband som var 520 mm breda (två hjul/axel) och stridsband
+som var 720 mm breda (tre hjul/axel). Konstruktionen med överlappande bärhjul gjorde att lera, is och stenar lätt fastnade mellan hjulen, vilket 
+kunde leda till att banden låste sig.[källa behövs] Å andra sidan gav upphängningen en relativt stillsam färd jämfört med andra konstruktioner. 
+Man hade också problem med att banden hamnade snett på hjulen och låste sig.[källa behövs] De kraftiga banden gjorde också att det inte var helt 
+enkelt att få loss dem när det fastnat, då spänningarna blev så höga att det inte gick att slå ur sprintarna, utan man fick istället spränga sönder
+dem eller oftare skära isär banden med skärbrännare. Två Tigrar behövdes för att bogsera en stillastående kamrat, medan det behövdes tre stycken av
+tyska standardbärgaren, halvbandvagnen FAMO för att bogsera en Tiger. Tidiga tigerstridsvagnar kunde köra under upp till 4 meter vatten i 2,5 
+timmars tid med hjälp av en snorkel. Denna möjlighet slopades efter de 500 första vagnarna och senare versioner kunde endast ta sig genom 1,3 meter
+vatten, men detta krävde troligen betydligt mindre förberedelsetid.
+</i></pre>
+<hr>
+
+    
+    <img src="https://tankmuseum.org/wp-content/uploads/2020/04/Tiger-I-feat-1100x500.jpg" style="width:100%"><br>
+<a href="https://sv.wikipedia.org/wiki/Panzerkampfwagen_VI_Tiger">Resource</a><br>
+<a href="mailto:gnowancoding@gmail.com">Request's and contact</a>
+
+
+</body>
+</html>
